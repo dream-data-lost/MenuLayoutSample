@@ -1,2 +1,2 @@
 # MenuLayoutSample
-Android Menu Layout project about
+Android Menu Layout sample project
