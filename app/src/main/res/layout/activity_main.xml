@@ -6,13 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btn_custom_slide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Bottom navigation view + Custom Slide menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bottom_drawer"/>
+    <Button
+        android:id="@+id/btn_bottom_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom navigation view + BottomSheetDialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_custom_slide"
+        app:layout_constraintBottom_toTopOf="@+id/btn_drawer_layout"/>
+    <Button
+        android:id="@+id/btn_drawer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom navigation view + Drawer layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bottom_drawer"
+        app:layout_constraintBottom_toTopOf="@+id/btn_viewpager"/>
+    <Button
+        android:id="@+id/btn_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom navigation view + ViewPager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drawer_layout"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bottom_appbar"/>
+    <Button
+        android:id="@+id/btn_bottom_appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BottomAppBar(Material components 2.0)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewpager" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
