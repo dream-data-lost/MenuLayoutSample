@@ -12,20 +12,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn_custom_slide.setOnClickListener(this)
         btn_bottom_drawer.setOnClickListener(this)
         btn_drawer_layout.setOnClickListener(this)
         btn_viewpager.setOnClickListener(this)
-//        btn_bottom_appbar.setOnClickListener(this)
+        btn_bottom_appbar.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.btn_custom_slide -> startActivity(Intent(v.context, FirstActivity::class.java))
             R.id.btn_bottom_drawer -> startActivity(Intent(v.context, SecondActivity::class.java))
             R.id.btn_drawer_layout -> startActivity(Intent(v.context, ThirdActivity::class.java))
             R.id.btn_viewpager -> startActivity(Intent(v.context, FourthActivity::class.java))
-//            R.id.btn_bottom_appbar -> startActivity(Intent(v.context, FifthActivity::class.java))
+            R.id.btn_bottom_appbar -> startActivity(Intent(v.context, FifthActivity::class.java))
         }
     }
 }

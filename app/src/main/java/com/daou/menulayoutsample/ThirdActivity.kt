@@ -29,8 +29,11 @@ class ThirdActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send
+                R.id.nav_mail, R.id.nav_contacts, R.id.nav_works,
+                R.id.nav_board, R.id.nav_calendar, R.id.nav_community,
+                R.id.nav_reserve, R.id.nav_approval, R.id.nav_report,
+                R.id.nav_task, R.id.nav_survey, R.id.nav_todo,
+                R.id.nav_attendance, R.id.nav_docs
             ), drawer_layout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

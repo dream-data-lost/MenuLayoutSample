@@ -1,26 +1,45 @@
 <resources>
     <string name="app_name">MenuLayoutSample</string>
     <string name="title_activity_first">FirstActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <string name="title_today">Today</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_chat">대화</string>
+    <string name="title_org">임직원 정보</string>
+    <string name="title_notifications">알림</string>
+
+    <!--  웹뷰 메뉴 -->
+    <string name="menu_mail">메일</string>
+    <string name="menu_contacts">주소록</string>
+    <string name="menu_works">Works</string>
+    <string name="menu_board">게시판</string>
+    <string name="menu_calendar">캘린더</string>
+    <string name="menu_community">커뮤니티</string>
+    <string name="menu_reserve">예약</string>
+    <string name="menu_approval">전자결재</string>
+    <string name="menu_report">보고</string>
+    <string name="menu_task">업무</string>
+    <string name="menu_survey">설문</string>
+    <string name="menu_todo">ToDO+</string>
+    <string name="menu_attendance">근태관리</string>
+    <string name="menu_docs">문서관리</string>
+
+    <string name="nav_header_title">이상은님</string>
+    <string name="nav_header_subtitle">다우기술 비즈서비스개발팀</string>
+
     <string name="title_activity_second">SecondActivity</string>
     <string name="title_activity_third">ThirdActivity</string>
     <string name="title_activity_fourth">FourthActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
 
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="menu_pc">PC버전</string>
+    <string name="menu_setting">설정</string>
+    <string name="menu_divider">|</string>
 </resources>

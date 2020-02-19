@@ -5,34 +5,71 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_mail"
+            android:icon="@drawable/icon_mail"
+            android:title="@string/menu_mail" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/icon_contact"
+            android:title="@string/menu_contacts" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_works"
+            android:icon="@drawable/icon_works"
+            android:title="@string/menu_works" />
         <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:id="@+id/nav_board"
+            android:icon="@drawable/icon_board"
+            android:title="@string/menu_board" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/icon_calendar"
+            android:title="@string/menu_calendar" />
+        <item
+            android:id="@+id/nav_community"
+            android:icon="@drawable/icon_community"
+            android:title="@string/menu_community" />
+        <item
+            android:id="@+id/nav_reserve"
+            android:icon="@drawable/icon_reservation"
+            android:title="@string/menu_reserve" />
+        <item
+            android:id="@+id/nav_approval"
+            android:icon="@drawable/icon_approval"
+            android:title="@string/menu_approval" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/icon_report"
+            android:title="@string/menu_report" />
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/icon_task"
+            android:title="@string/menu_task" />
+        <item
+            android:id="@+id/nav_survey"
+            android:icon="@drawable/icon_survey"
+            android:title="@string/menu_survey" />
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@drawable/icon_todo"
+            android:title="@string/menu_todo" />
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/icon_ehr"
+            android:title="@string/menu_attendance" />
+        <item
+            android:id="@+id/nav_docs"
+            android:icon="@drawable/icon_docs"
+            android:title="@string/menu_docs" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
-        </menu>
-    </item>
-
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pc"
+            android:icon="@drawable/icon_pc"
+            android:title="@string/menu_pc" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/icon_setting"
+            android:title="@string/menu_setting" />
+    </group>
 </menu>

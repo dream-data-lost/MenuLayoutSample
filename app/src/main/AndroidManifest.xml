@@ -19,9 +19,6 @@
         <activity
             android:name=".SecondActivity"
             android:label="@string/title_activity_second" />
-        <activity
-            android:name=".FirstActivity"
-            android:label="@string/title_activity_first" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

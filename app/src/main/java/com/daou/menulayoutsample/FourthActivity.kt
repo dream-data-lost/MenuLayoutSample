@@ -6,13 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import androidx.viewpager.widget.ViewPager
-import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_first.toolbar_first
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.activity_fourth.*
+import kotlinx.android.synthetic.main.custom_bottom_sheet_dialog.*
 
 class FourthActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -38,19 +36,32 @@ class FourthActivity : AppCompatActivity() {
                 fourth_nav_view.menu.getItem(position).isChecked = true
             }
         })
+        val sheetBehavior = BottomSheetBehavior.from(rl_bottom_sheet)
 
         val navigationChangeListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when(item.itemId) {
-                R.id.navigation_home -> {
-                    nav_viewpager.currentItem = 0
-                    return@OnNavigationItemSelectedListener true
+                R.id.navigation_menu -> {
+                    if (sheetBehavior.state != BottomSheetBehavior.STATE_EXPANDED) {
+                        sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                    } else {
+                        sheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+                    }
+                    return@OnNavigationItemSelectedListener false
                 }
-                R.id.navigation_gallery -> {
+                R.id.navigation_today -> {
                     nav_viewpager.currentItem = 1
                     return@OnNavigationItemSelectedListener true
                 }
-                R.id.navigation_notifications -> {
+                R.id.navigation_chat -> {
                     nav_viewpager.currentItem = 2
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.navigation_org -> {
+                    nav_viewpager.currentItem = 3
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.navigation_notifications -> {
+                    nav_viewpager.currentItem = 4
                     return@OnNavigationItemSelectedListener true
                 }
             }
@@ -58,6 +69,7 @@ class FourthActivity : AppCompatActivity() {
         }
 
         fourth_nav_view.setOnNavigationItemSelectedListener(navigationChangeListener)
+        fourth_nav_view.selectedItemId = R.id.navigation_today
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.third, menu)
