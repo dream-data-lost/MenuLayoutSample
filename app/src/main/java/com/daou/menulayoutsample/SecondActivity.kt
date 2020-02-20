@@ -12,6 +12,7 @@ import com.daou.menulayoutsample.ui.chat.ChatFragment
 import com.daou.menulayoutsample.ui.menu.MenuFragment
 import com.daou.menulayoutsample.ui.notifications.NotificationsFragment
 import com.daou.menulayoutsample.ui.org.OrgFragment
+import com.daou.menulayoutsample.ui.today.TodayFragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.activity_second.*
 import kotlinx.android.synthetic.main.custom_bottom_sheet_dialog.*
@@ -46,7 +47,7 @@ class SecondActivity : AppCompatActivity() {
                     return@OnNavigationItemSelectedListener false
                 }
                 R.id.navigation_today -> {
-                    transaction.replace(R.id.nav_host_fragment, MenuFragment()).commitAllowingStateLoss()
+                    transaction.replace(R.id.nav_host_fragment, TodayFragment()).commitAllowingStateLoss()
                 }
                 R.id.navigation_chat -> {
                     transaction.replace(R.id.nav_host_fragment, ChatFragment()).commitAllowingStateLoss()

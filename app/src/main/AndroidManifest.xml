@@ -10,12 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".FifthActivity"
+            android:label="@string/title_activity_fifth"
+            android:theme="@style/MaterialAppTheme">
+        </activity>
+        <activity
             android:name=".FourthActivity"
-            android:label="@string/title_activity_fourth"></activity>
+            android:label="@string/title_activity_fourth">
+        </activity>
         <activity
             android:name=".ThirdActivity"
             android:label="@string/title_activity_third"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity
             android:name=".SecondActivity"
             android:label="@string/title_activity_second" />

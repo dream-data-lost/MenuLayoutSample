@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_today"
+        android:icon="@drawable/nav_today_touch"
+        android:title="@string/title_today"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/nav_chat_touch_mint"
+        android:title="@string/title_chat"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_org"
+        android:icon="@drawable/nav_org_touch_mint"
+        android:title="@string/title_org"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/nav_alarm_touch_mint"
+        android:title="@string/title_notifications"
+        app:showAsAction="never"/>
+
+</menu>
